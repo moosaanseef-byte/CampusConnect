@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+    background-color: #1e3a8a;
+    color:antiquewhite
+}
+
+.logo{
+    font-size: 24px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 25px;
+}
+.nav-links a{
+    color: rgb(240, 232, 222);
+    text-decoration:none;
+}
+.nav-links a:hover {
+    text-decoration:underline;
+}
+
+.hero{
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px;
+
+    background-color: lightblue;
+}
+.hero-content{
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 25px;
+
+    background-color: #1e3a8a;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: translatey(10px);
+}
+
+.about,
+.opportunities,
+.features,
+.register {
+    padding: 70px 8%;
+
+    text-align: center;
+
+}
+.about{
+    background-color: rgb(145, 174, 199);
+    /* min-height: 500px; */
+
+}
+
+.about p{
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.cards, .feature-container {
+display: grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap: 25px;
+
+margin-top:40px;
+}
+
+.card{
+    padding: 25px;
+
+    border: 1px solid#ddd;
+
+    border-radius: 10px;
+
+    background-color: antiquewhite;
+
+    transition: 0.5s;
+
+}
+
+.card:hover{
+    transform:translateY(-5px);
+
+    box-shadow: o 5px 15px rgba(red, green, blue, alpha);
+}
+
+.card h3{
+    margin-bottom: 15px;
+}
+
+.card button,
+form button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    background-color:#1e3a8a;
+    color:white;
+    cursor: pointer;
+}
+.feature{
+    padding: 30px;
+    background-color: bisque;
+    border-radius: 15px;
+}
+
+.register{
+    background-color: antiquewhite;
+}
+
+form{
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form label{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+form input,
+form select{
+    padding: 12px;
+    border: 1px solid#ccc;
+    border-radius: 5px;
+}
+
+footer{
+    padding: 25px;
+    text-align: center;
+    background-color: #1e3a8a;
+    color: antiquewhite;
+}
+
+@media(Max-width:768px){
+    .navbar{
+        flex-direction:column ;
+        gap: 15px;
+    }
+    .nav-links{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+     }
+     .hero h1{
+        font-size: 32px;
+     }
+     .cards,.feature-container{
+        grid-template-columns: 1fr;
+     }
+    }
+    
