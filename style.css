@@ -52,7 +52,7 @@ header{
     text-align: center;
     padding: 40px;
 
-    background-color: lightblue;
+    background-color: white;
 }
 .hero-content{
     max-width: 700px;
@@ -96,7 +96,7 @@ header{
 
 }
 .about{
-    background-color: rgb(145, 174, 199);
+    background-color: lightcyan;
     /* min-height: 500px; */
 
 }
@@ -202,5 +202,63 @@ footer{
      .cards,.feature-container{
         grid-template-columns: 1fr;
      }
+
+    }
+
+
+
+    #search-input,
+    #category-filter{
+        padding: 12px;
+        margin: 25px 8px 0;
+        border: 1px solid#ccc;
+        border-radius: 6px;
+        font-size: 15px; 
+    }
+
+    #search-input{
+        width: 300px;
+        max-width: 90%;
+    }
+
+    #category-filter{
+        background-color: white;
+    }
+
+    #no-results{
+        margin-top: 30px;
+        color: #666;
+    }
+
+    #favorites-toggle{
+        padding: 12px 18px;
+        margin: 25px 8px 0;
+        border: none;
+        border-radius: 6px;
+        background-color: #f59e0b;
+        color: #222;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #favorites-toggle:hover{
+        background-color: #d97706;
+    }
+    .card button{
+        margin: 10px 5px 0;
     }
     
+   .card .save-btn{
+    background-color: #15803d;
+   }
+   .card .save-btn:hover{
+    background-color: #166534;
+   }
+
+   .card .saved-btn{
+    background-color: #b91c1c;
+   }
+
+   .card .saved-btn{
+    background-color: #991b1b;
+   }
+
